@@ -1,0 +1,327 @@
+body {
+  font-family: 'PT Serif', serif;
+  overflow-x: hidden;
+  margin: 0;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+
+body header {
+  width: 100%;
+  height: 50px;
+  background: #fafafa;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.2);
+}
+
+body header h1 {
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+body main ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body main ul li {
+  background: #fff;
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  min-height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+@media only screen and (max-width: 550px) {
+  body main ul li {
+    padding-left: 8px;
+    min-height: 46px;
+  }
+}
+
+body main ul li .taskTitle {
+  font-size: 22px;
+  color: #151515;
+  padding: 6px 25px 6px 0px;
+}
+
+@media only screen and (max-width: 550px) {
+  body main ul li .taskTitle {
+    font-size: 15px;
+  }
+}
+
+body main ul li .taskComment {
+  display: none;
+}
+
+body main ul li i {
+  color: #bbb;
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  body main ul li i {
+    font-size: 26px;
+    margin-right: 10px;
+  }
+}
+
+body main ul li span {
+  position: absolute;
+  right: 40px;
+  color: #28ce63;
+  opacity: .42;
+}
+
+@media only screen and (max-width: 550px) {
+  body main ul li span {
+    right: 20px;
+  }
+}
+
+body main ul .colorDone {
+  background-color: #fbfbfb !important;
+}
+
+body main #add {
+  background: #818181;
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  text-align: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #add {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+body main #add:hover {
+  cursor: pointer;
+  background: #555;
+}
+
+body main #add i {
+  font-size: 40px;
+  line-height: 80px;
+  color: #f4f4f4;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #add i {
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+
+body main #block {
+  position: fixed;
+  padding: 30px;
+  background: #f6f6f6;
+  right: -473px;
+  top: 0px;
+  width: 400px;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 13px 5px #aaa;
+          box-shadow: 0 0 13px 5px #aaa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block {
+    right: 0px;
+    width: 250px;
+    padding: 20px;
+  }
+}
+
+body main #block #blockTitle {
+  width: 380px;
+  height: 44px;
+  border: 0;
+  padding: 0 10px;
+  background: #fff;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 7px -0.5px #aaa;
+          box-shadow: 0 0 7px -0.5px #aaa;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block #blockTitle {
+    width: 220px;
+    height: 36px;
+  }
+}
+
+body main #block #blockComments {
+  width: 380px;
+  max-width: 380px;
+  min-width: 380px;
+  height: 200px;
+  max-height: calc(100% - 260px);
+  padding: 10px;
+  border: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 7px -0.5px #aaa;
+          box-shadow: 0 0 7px -0.5px #aaa;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block #blockComments {
+    width: 220px;
+    max-width: 220px;
+    min-width: 220px;
+  }
+}
+
+body main #block button {
+  width: 400px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  right: 30px;
+  -webkit-transition: .15s;
+  transition: .15s;
+  -webkit-box-shadow: 0 0 3px -0.5px #333;
+          box-shadow: 0 0 3px -0.5px #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block button {
+    width: 240px;
+    height: 32px;
+  }
+}
+
+body main #block button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+body main #block #save {
+  background: #666;
+  bottom: 148px;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block #save {
+    bottom: 110px;
+  }
+}
+
+body main #block #remove {
+  background: #ff5757;
+  bottom: 88px;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #block #remove {
+    bottom: 65px;
+  }
+}
+
+body main #addTask {
+  position: absolute;
+  padding: 27px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  background: #f6f6f6;
+  width: 400px;
+  -webkit-box-shadow: 0 0 13px 5px #aaa;
+          box-shadow: 0 0 13px 5px #aaa;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #addTask {
+    width: 260px;
+    padding: 15px;
+    -webkit-box-shadow: 0 0 9px 2px #aaa;
+            box-shadow: 0 0 9px 2px #aaa;
+  }
+}
+
+body main #addTask form input {
+  width: 380px;
+  height: 44px;
+  border: 0;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 7px -0.5px #aaa;
+          box-shadow: 0 0 7px -0.5px #aaa;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #addTask form input {
+    width: 240px;
+    height: 38px;
+    margin-bottom: 8px;
+    -webkit-box-shadow: 0 0 5px -0.5px #aaa;
+            box-shadow: 0 0 5px -0.5px #aaa;
+  }
+}
+
+body main #addTask form textarea {
+  width: 380px;
+  height: 200px;
+  border: 0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 7px -0.5px #aaa;
+          box-shadow: 0 0 7px -0.5px #aaa;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #addTask form textarea {
+    height: 170px;
+    width: 240px;
+    -webkit-box-shadow: 0 0 5px -0.5px #aaa;
+            box-shadow: 0 0 5px -0.5px #aaa;
+  }
+}
+
+body main #addTask form button {
+  width: 100%;
+  height: 44px;
+  border: 0;
+  margin-top: 15px;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  body main #addTask form button {
+    height: 38px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

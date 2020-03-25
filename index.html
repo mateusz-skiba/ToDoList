@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e566dd2280.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    
+    <main>
+
+        <ul>
+            <li><i class="fa-circle far"></i><div class="taskTitle">Zrób zakupy (Przykładowe zadanie)</div><span class="fa fa-star"></span><div class="taskComment">- 6x jajka
+- 2x mleko
+- 1kg mąka
+- ser żółty</div>
+            </li>
+        </ul>
+        
+        <div id="add"><i class="fas fa-plus"></i></div>
+        
+        <div id="block">
+            <input id="blockTitle" type="text" placeholder="Task" value="">
+            <textarea id="blockComments" placeholder="Comment"></textarea>
+            <button id="save">Save</button>
+            <button id="remove">Delete</button>
+        </div>
+
+        <div id="addTask">
+            <form action="">
+            <input type="text" placeholder="Task" value="">
+            <textarea placeholder="Comments"></textarea>
+            <button>Add task</button>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
