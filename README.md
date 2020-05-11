@@ -1,5 +1,6 @@
 # toDoList
 > The application is used to plan days. Very easy in use, with two click you can add your daily task and mark it as "important", and when you did this you can mark it as done or completely delete.
+
 Link: https://mateusz-skiba.github.io/rockPaperScissors/
 
 ## Technologies
